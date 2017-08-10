@@ -11,7 +11,8 @@ namespace Plugin.Multilingual.Abstractions
     {
         CultureInfo CurrentCultureInfo {get; set;}
         CultureInfo DeviceCultureInfo { get; }
-        CultureInfo[] DeviceCultureInfoList { get; }
-
+        CultureInfo[] CultureInfoList { get; }
+        CultureInfo[] NeutralCultureInfoList { get; }
+        CultureInfo GetCultureInfo(string name);
     }
 }

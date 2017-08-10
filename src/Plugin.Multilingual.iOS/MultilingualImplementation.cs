@@ -1,18 +1,36 @@
 using Plugin.Multilingual.Abstractions;
 using System;
 using System.Globalization;
+using System.Threading;
+using Foundation;
 
 namespace Plugin.Multilingual
 {
     /// <summary>
     /// Implementation for Multilingual
-    /// </summary>
     public class MultilingualImplementation : IMultilingual
     {
-        public CultureInfo CurrentCultureInfo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        CultureInfo _currentCultureInfo = CultureInfo.InstalledUICulture;
+        public CultureInfo CurrentCultureInfo
+        {
+            get
+            {
+                return _currentCultureInfo;
+            }
+            set
+            {
+                _currentCultureInfo = value;
+                Thread.CurrentThread.CurrentCulture = value;
+                Thread.CurrentThread.CurrentUICulture = value;
+            }
+        }
 
-        public CultureInfo DeviceCultureInfo => throw new NotImplementedException();
+        public CultureInfo DeviceCultureInfo { get { return CultureInfo.InstalledUICulture; } }
 
-        public CultureInfo[] DeviceCultureInfoList => throw new NotImplementedException();
+        public CultureInfo[] CultureInfoList { get { return CultureInfo.GetCultures(CultureTypes.AllCultures); } }
+
+        public CultureInfo[] NeutralCultureInfoList { get { return CultureInfo.GetCultures(CultureTypes.NeutralCultures); } }
+
+        public CultureInfo GetCultureInfo(string name) { return CultureInfo.GetCultureInfo(name); }
     }
 }
