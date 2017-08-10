@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MultilingualSample.Views.ChangeLanguagePage"
+             xmlns:i18n="clr-namespace:MultilingualSample.Helpers"
+             Title="{i18n:Translate ChangeLanguage}">
+    <ContentPage.Content>
+          <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+              <Label   Text="{i18n:Translate SelectLanguage}"  />
+               <Picker x:Name="picker" />
+               <Button Text="{i18n:Translate Save}" Clicked="OnUpdateLangugeClicked" BackgroundColor="Black" TextColor="White"/>
+          </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

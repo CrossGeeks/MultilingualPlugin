@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MultilingualSample.Views.HomePage"
+             xmlns:i18n="clr-namespace:MultilingualSample.Helpers"
+             Title="{i18n:Translate Home}">
+	<ContentPage.Content>
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="5*" />
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+                <Label FontSize="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" Grid.Row="0" Grid.Column="0" BackgroundColor="Black" Text="{i18n:Translate Welcome}"  />
+                <Button Clicked="Handle_Clicked" Margin="5" FontSize="19" BorderColor="Black" BorderWidth="1" Grid.Row="1" Grid.Column="0" Text="{i18n:Translate ChangeLanguage}" TextColor="Black"  />
+            </Grid>
+	</ContentPage.Content>
+</ContentPage>
