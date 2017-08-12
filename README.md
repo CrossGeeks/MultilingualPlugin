@@ -2,7 +2,7 @@
 Simple cross platform plugin for handling language localization.
 
 <p align="center">
-<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual.gif" title="Multilingual"/>
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual.gif" height="400" width="240" title="Multilingual"/>
 </p>
 
 ## Features
