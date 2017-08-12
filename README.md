@@ -23,7 +23,20 @@ Simple cross platform plugin for handling language localization.
 * Available on NuGet: http://www.nuget.org/packages/Plugin.Multilingual [![NuGet](https://img.shields.io/nuget/v/Plugin.Multilingual.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.Multilingual/)
 * Install into your PCL project and Client projects.
 
+### Getting Started
 
+1. Add your Resx files 
+
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - setup1.png"  title="Multilingual"/>
+
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - setup2.png"  title="Multilingual"/>
+
+2. Set the culture of your resource class file when initializing your application. 
+
+For example:
+```csharp
+  AppResources.Culture = CrossMultilingual.Current.DeviceCultureInfo;
+```
 
 ### Xamarin Forms Specifics
 
