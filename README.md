@@ -71,6 +71,11 @@ Usage sample:
 ```csharp
   CrossMultilingual.Current.CurrentCultureInfo = new CultureInfo("en");
 ```
+Note: After changing the current culture is important to update your resx class culture. As follows:
+
+```csharp
+AppResources.Culture = CrossMultilingual.Current.CurrentCultureInfo;
+```
 
 **DeviceCultureInfo**
 
