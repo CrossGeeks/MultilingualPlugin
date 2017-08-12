@@ -48,7 +48,7 @@ In **TranslateExtension.cs** file in the variable **ResourceId** by default it w
 
 XAML sample usage:
 
-<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual -forms2.png"  title="Multilingual"/>
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual -xaml.png"  title="Multilingual"/>
 
 ### iOS Considerations
 
