@@ -44,11 +44,11 @@ When installing the plugin it will create a **TranslateExtension.txt** file in f
 
 In **TranslateExtension.cs** file in the variable **ResourceId** by default it will assume your resource file is added in the root of the project and the resx file is named as AppResources. If you added it to a folder or named the resx file differently you can change it there.
 
-<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - forms1.png"  title="Multilingual"/>
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual -forms1.png"  title="Multilingual"/>
 
 XAML sample usage:
 
-<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - forms2.png"  title="Multilingual"/>
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual -forms2.png"  title="Multilingual"/>
 
 ### iOS Considerations
 
