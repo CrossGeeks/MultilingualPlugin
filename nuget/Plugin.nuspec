@@ -2,7 +2,7 @@
 <package >
   <metadata minClientVersion="2.8.1">
     <id>Plugin.Multilingual</id>
-    <version>1.1.1</version>
+    <version>1.0.0</version>
     <title>Multilingual Plugin for Xamarin</title>
     <authors>Charlin Agramonte</authors>
     <owners>crossgeeks</owners>
@@ -10,13 +10,17 @@
     <projectUrl>https://github.com/CrossGeeks/MultilingualPlugin</projectUrl>
     <iconUrl>https://github.com/CrossGeeks/MultilingualPlugin/blob/master/art/icon.png?raw=true</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Handle multi language support across Xamarin.iOS and Xamarin.Android</description>
-    <summary>Handle multi language support across Xamarin.iOS and Xamarin.Android</summary>
+    <description>Handle multi language support across Xamarin Forms, Xamarin.iOS and Xamarin.Android</description>
+    <summary>Handle multi language support across Xamarin Forms, Xamarin.iOS and Xamarin.Android</summary>
     <releaseNotes>Multi language support</releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>iOS,Android,multi language,resx,localize</tags>
+    <tags>iOS,Android,multi language,resx,localization,xamarin forms,localizing,internacionalization</tags>
   </metadata>
   <files>
+        <!--Content-->
+        <file src="..\content\TranslateExtension.txt.pp" target="content\portable-net45+wp80+win8+wpa81\Helpers\TranslateExtension.txt.pp" />
+        <file src="..\content\TranslateExtension.txt.pp" target="content\netstandard1.4\Helpers\TranslateExtension.txt.pp" />
+        <!--Libraries-->
         <file src="..\src\Plugin.Multilingual.Android\bin\Release\Plugin.Multilingual.*" target="lib\MonoAndroid10" />
         <file src="..\src\Plugin.Multilingual\bin\Release\Plugin.Multilingual.*" target="lib\netstandard1.4" />
         <file src="..\src\Plugin.Multilingual\bin\Release\Plugin.Multilingual.*" target="lib\portable-net45+wp80+win8+wpa81" />
