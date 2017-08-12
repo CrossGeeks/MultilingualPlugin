@@ -115,7 +115,7 @@ Usage sample:
   CrossMultilingual.Current.GetCultureInfo("es");
 ```
 
-#### Contributors
+### Contributors
 
 * [Charlin Agramonte](https://github.com/char0394)
 * [Rendy Del Rosario](https://github.com/rdelrosario)
