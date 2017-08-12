@@ -27,7 +27,7 @@ Simple cross platform plugin for handling language localization.
 
 1. Add your Resx files 
 
-<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - setup1.png"  title="Multilingual"/>
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - setup1.png"  title="Multilingual" height="350" width="500" />
 
 <img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - setup2.png"  title="Multilingual"/>
 
@@ -42,7 +42,7 @@ For example:
 
 When installing the plugin it will create a **TranslateExtension.txt** file in folder Helpers, rename the extension for this file to **TranslateExtension.cs**.
 
-In **TranslateExtension.cs** file in the variable **ResourceId** by default it will assume your resource file is added in the root of the project and the resx file is named as AppResources. If you added it to a folder or named the resx file differently you can change it there.
+In **TranslateExtension.cs** file in the constant **ResourceId** by default it will assume your resource file is added in the root of the project and the resx file is named as AppResources. If you added it to a folder or named the resx file differently you can change it there.
 
 <img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual -forms1.png"  title="Multilingual"/>
 
@@ -52,11 +52,11 @@ XAML sample usage:
 
 ### iOS Considerations
 
-<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - step1.png"  title="Multilingual"/>
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - step1.png"  title="Multilingual" height="150" width="500" />
 
 In the Info.plist file add the keys **Localizations** & **Localization native development region** to change the user interface OS elements. It will take the device language.
 
-<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - step2.png" title="Multilingual"/>
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - step2.png" title="Multilingual" height="250" width="400" />
 
 
 ### API Usage
