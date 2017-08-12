@@ -23,9 +23,19 @@ Simple cross platform plugin for handling language localization.
 * Available on NuGet: http://www.nuget.org/packages/Plugin.Multilingual [![NuGet](https://img.shields.io/nuget/v/Plugin.Multilingual.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.Multilingual/)
 * Install into your PCL project and Client projects.
 
+
+
 ### Xamarin Forms Specifics
 
 When installing the plugin it will create a **TranslateExtension.txt** file in folder Helpers, rename the extension for this file to **TranslateExtension.cs**.
+
+### iOS Considerations
+
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - step1.png"  title="Multilingual"/>
+
+In the Info.plist file add the keys **Localizations** & **Localization native development region** to change the user interface OS elements. It will take the device language.
+
+<img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - step2.png" title="Multilingual"/>
 
 
 ### API Usage
