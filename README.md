@@ -32,12 +32,15 @@ Simple cross platform plugin for handling language localization.
 
 <img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - setup2.png"  title="Multilingual"/>
 
+Add one resx file per each language you want to support. "It must follow a specific naming convention: use the same filename as the base resources file (eg. AppResources) followed by a period (.) and then the language code".
+
 2. Set the culture of your resource class file when initializing your application. 
 
 For example:
 ```csharp
   AppResources.Culture = CrossMultilingual.Current.DeviceCultureInfo;
 ```
+<i>If you are using Xamarin Forms it would be in your App.cs</i>
 
 ### Xamarin Forms Specifics
 
@@ -58,7 +61,6 @@ XAML sample usage:
 In the Info.plist file add the keys **Localizations** & **Localization native development region** to change the user interface OS elements. It will take the device language.
 
 <img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual - step2.png" title="Multilingual" height="250" width="400" />
-
 
 ### API Usage
 
@@ -115,6 +117,10 @@ Usage sample:
 ```csharp
   CrossMultilingual.Current.GetCultureInfo("es");
 ```
+
+In case you want to know more about localization:
+
+https://developer.xamarin.com/guides/xamarin-forms/advanced/localization/
 
 ### Contributors
 
