@@ -11,22 +11,19 @@ namespace MultilingualSample.Views
         public ChangeLanguagePage()
         {
             InitializeComponent();
-
-
             picker.Items.Add("English");
             picker.Items.Add("Spanish");
             picker.Items.Add("Portuguese");
             picker.Items.Add("French");
-
-            picker.SelectedItem = CrossMultilingual.Current.CurrentCultureInfo.DisplayName;
+            picker.SelectedItem = CrossMultilingual.Current.CurrentCultureInfo.EnglishName;
         }
 
          void OnUpdateLangugeClicked(object sender, System.EventArgs e)
         {
-            CrossMultilingual.Current.CurrentCultureInfo = CrossMultilingual.Current.NeutralCultureInfoList.ToList().First(element => element.DisplayName.Contains(picker.SelectedItem.ToString()));
-			AppResources.Culture = CrossMultilingual.Current.CurrentCultureInfo;
 
-            App.Current.MainPage =new NavigationPage(new HomePage());
+            CrossMultilingual.Current.CurrentCultureInfo = CrossMultilingual.Current.NeutralCultureInfoList.ToList().First(element => element.EnglishName.Contains(picker.SelectedItem.ToString()));
+			AppResources.Culture = CrossMultilingual.Current.CurrentCultureInfo;
+            App.Current.MainPage = new NavigationPage(new HomePage());
 
         }
     }

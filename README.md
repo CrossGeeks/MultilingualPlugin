@@ -1,4 +1,4 @@
-## Multilingual Plugin for Xamarin Forms, Xamarin iOS and Android
+## Multilingual Plugin for Xamarin Forms, Xamarin iOS , Xamarin Android and Windows
 Simple cross platform plugin for handling language localization.
 
 <p align="center">
@@ -16,8 +16,9 @@ Simple cross platform plugin for handling language localization.
 
 |Platform|Version|
 | ------------------- | :------------------: |
-|Xamarin.iOS|iOS 7+|
-|Xamarin.Android|API 15+|
+|Xamarin.iOS|All|
+|Xamarin.Android|All|
+|Windows 10 UWP|All|
 
 ### Setup
 * Available on NuGet: http://www.nuget.org/packages/Plugin.Multilingual [![NuGet](https://img.shields.io/nuget/v/Plugin.Multilingual.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.Multilingual/)

@@ -11,7 +11,6 @@ namespace MultilingualSample
         public App()
         {
             InitializeComponent();
-
             AppResources.Culture = CrossMultilingual.Current.DeviceCultureInfo;
 			MainPage = new NavigationPage(new HomePage());
 		}

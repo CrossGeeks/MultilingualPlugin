@@ -40,10 +40,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Plugin.Multilingual, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Plugin.Multilingual.1.0.0\lib\MonoAndroid10\Plugin.Multilingual.dll</HintPath>
+      <HintPath>..\packages\Plugin.Multilingual.1.0.1-beta\lib\MonoAndroid10\Plugin.Multilingual.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.Multilingual.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Plugin.Multilingual.1.0.0\lib\MonoAndroid10\Plugin.Multilingual.Abstractions.dll</HintPath>
+      <HintPath>..\packages\Plugin.Multilingual.1.0.1-beta\lib\MonoAndroid10\Plugin.Multilingual.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
