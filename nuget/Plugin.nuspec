@@ -27,6 +27,9 @@
         <file src="..\src\Plugin.Multilingual.iOS\bin\iPhone\Release\Plugin.Multilingual.*" target="lib\Xamarin.iOS10" />
         <!--UWP-->
         <file src="..\src\Plugin.Multilingual.UWP\bin\Release\Plugin.Multilingual.*" target="lib\UAP10" />
-      
+        <!--Xamarin.Mac-->
+        <file src="..\src\Plugin.Multilingual.Mac\bin\Release\Plugin.Multilingual.*" target="lib\Xamarin.Mac20" />
+        <!--tvOS-->
+        <file src="..\src\Plugin.Multilingual.tvOS\bin\Release\Plugin.Multilingual.*" target="lib\XamarinTVOS" />
   </files>
 </package>
