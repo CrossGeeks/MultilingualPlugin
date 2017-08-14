@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Multilingual", "Plugin.Multilingual\Plugin.Multilingual.csproj", "{A6FCEF44-D2BA-42C7-B3CB-13667BCD7B54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Multilingual", "Plugin.Multilingual\Plugin.Multilingual.csproj", "{A6FCEF44-D2BA-42C7-B3CB-13667BCD7B54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Multilingual.Abstractions", "Plugin.Multilingual.Abstractions\Plugin.Multilingual.Abstractions.csproj", "{6EDB0588-FFC5-4EF5-8A99-9E241D0F878D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Multilingual.Abstractions", "Plugin.Multilingual.Abstractions\Plugin.Multilingual.Abstractions.csproj", "{6EDB0588-FFC5-4EF5-8A99-9E241D0F878D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Multilingual.iOS", "Plugin.Multilingual.iOS\Plugin.Multilingual.iOS.csproj", "{2882AEEB-D4CD-4EB9-8A6C-6653B33681F0}"
 EndProject
@@ -19,7 +19,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Multilingual.tvOS", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Multilingual.watchOS", "Plugin.Multilingual.watchOS\Plugin.Multilingual.watchOS.csproj", "{5BA9603A-0A09-4365-9662-BB9532B13138}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Multilingual.Net45", "Plugin.Multilingual.Net45\Plugin.Multilingual.Net45.csproj", "{0DBCF574-8A15-4CC5-A637-649B65E43C7E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Plugin.Multilingual.Shared", "Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.shproj", "{4E24E3FA-E4D2-4F18-8473-AA102416D141}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{0dbcf574-8a15-4cc5-a637-649b65e43c7e}*SharedItemsImports = 4
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{2882aeeb-d4cd-4eb9-8a6c-6653b33681f0}*SharedItemsImports = 4
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{43e0b39e-8f13-4373-8079-066292aad7ef}*SharedItemsImports = 4
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{4e24e3fa-e4d2-4f18-8473-aa102416d141}*SharedItemsImports = 13
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{56a56f17-7de1-4ca1-9617-bf32e971ac84}*SharedItemsImports = 4
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{5ba9603a-0a09-4365-9662-bb9532b13138}*SharedItemsImports = 4
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{a6fcef44-d2ba-42c7-b3cb-13667bcd7b54}*SharedItemsImports = 4
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{c23ec143-fad4-4f47-b472-3205ab1b2f4a}*SharedItemsImports = 4
+		Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems*{e34b516d-c0d8-450f-9db0-bb6a5b04aef1}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
@@ -227,6 +242,30 @@ Global
 		{5BA9603A-0A09-4365-9662-BB9532B13138}.Release|x64.Build.0 = Release|Any CPU
 		{5BA9603A-0A09-4365-9662-BB9532B13138}.Release|x86.ActiveCfg = Release|Any CPU
 		{5BA9603A-0A09-4365-9662-BB9532B13138}.Release|x86.Build.0 = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|x64.Build.0 = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Debug|x86.Build.0 = Debug|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|ARM.Build.0 = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|iPhone.Build.0 = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|x64.ActiveCfg = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|x64.Build.0 = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|x86.ActiveCfg = Release|Any CPU
+		{0DBCF574-8A15-4CC5-A637-649B65E43C7E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

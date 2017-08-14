@@ -79,10 +79,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Plugin.Multilingual, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Plugin.Multilingual.1.0.1-beta\lib\portable-net45+wp80+win8+wpa81\Plugin.Multilingual.dll</HintPath>
+      <HintPath>..\packages\Plugin.Multilingual.1.0.2\lib\netstandard1.0\Plugin.Multilingual.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.Multilingual.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Plugin.Multilingual.1.0.1-beta\lib\portable-net45+wp80+win8+wpa81\Plugin.Multilingual.Abstractions.dll</HintPath>
+      <HintPath>..\packages\Plugin.Multilingual.1.0.2\lib\netstandard1.0\Plugin.Multilingual.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>

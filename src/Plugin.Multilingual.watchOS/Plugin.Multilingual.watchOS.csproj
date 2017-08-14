@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{FC940695-DFE0-4552-9F25-99AF4A5619A1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>Plugin.Multilingual</RootNamespace>
-    <AssemblyName>Plugin.Multilingual.watchOS</AssemblyName>
+    <AssemblyName>Plugin.Multilingual</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,7 +31,8 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
@@ -48,15 +49,13 @@
   <ItemGroup>
     <Compile Include="MultilingualImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\Plugin.Multilingual\CrossMultilingual.cs">
-      <Link>CrossMultilingual.cs</Link>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Plugin.Multilingual.Abstractions\Plugin.Multilingual.Abstractions.csproj">
-      <Project>{6EDB0588-FFC5-4EF5-8A99-9E241D0F878D}</Project>
+      <Project>{6edb0588-ffc5-4ef5-8a99-9e241d0f878d}</Project>
       <Name>Plugin.Multilingual.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\Plugin.Multilingual.Shared\Plugin.Multilingual.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\WatchOS\Xamarin.WatchOS.CSharp.targets" />
 </Project>

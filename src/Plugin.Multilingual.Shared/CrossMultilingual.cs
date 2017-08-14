@@ -24,18 +24,19 @@ namespace Plugin.Multilingual
           throw NotImplementedInReferenceAssembly();
         }
         return ret;
-
       }
     }
 
     static IMultilingual CreateMultilingual()
     {
-#if PORTABLE
-        return null;
-#else
-        return new MultilingualImplementation();
-#endif
-    }
+        #if NETSTANDARD1_0
+                    return null;
+        #else
+        #pragma warning disable IDE0022 // Use expression body for methods
+			        return new MultilingualImplementation();
+        #pragma warning restore IDE0022 // Use expression body for methods
+        #endif
+     }
 
     internal static Exception NotImplementedInReferenceAssembly()
     {
