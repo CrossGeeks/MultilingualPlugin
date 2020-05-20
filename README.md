@@ -1,5 +1,14 @@
-## Multilingual Plugin for Xamarin Forms, Xamarin iOS , Xamarin Android, Xamarin Mac, tvOS, watchOS and Windows
+## Multilingual Plugin (DEPRECATED)
 Simple cross platform plugin for handling language localization.
+
+
+# **IMPORTANT NOTE**:
+
+**THIS PLUGIN IS DECPRECATED - NOT UNDER DEVELOPMENT AND NOT SUPPORTED**
+
+**This plugin is no longer needed. More information here:**
+
+https://xamgirl.com/handle-multilingual-in-xamarin-forms-without-any-plugin/
 
 <p align="center">
 <img src="https://github.com/CrossGeeks/MultilingualPlugin/blob/master/multilingual.gif" height="400" width="240" title="Multilingual"/>
